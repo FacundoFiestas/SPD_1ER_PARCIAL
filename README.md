@@ -138,3 +138,38 @@ if (valorFototransistor == 0) {
 
 ## Link al proyecto
 - [SPD - Displays 7 segmentos - Fotoresistor](https://www.tinkercad.com/things/grhwCnDGqEx-copy-of-1er-parcial-domiciliario-spd/editel?sharecode=kEe3BXCOUsoV5C2kqc78QYM5kmVIkmvIbPkKUwLXZms)
+
+
+-PARTE 4 - Facundo Fiestas
+
+## Descripcion
+Se sustituyen los numeros primos por numeros hexadecimales.
+
+## Funcion principal
+La funcion principal se encarga de detectar la unidad o la decena correspondiente para mostrar los numeros hexadecimales con exito.
+
+~~~ C++ (lenguaje en el que esta escrito)
+void printCount(int count)
+{
+  /*
+  1- Apago todos los leds
+  2- mando la señal de la decena
+  3- Prendo el display de la decena
+  4- Apago el display
+  5- Mando la señal de la unidad
+  6- Prendo display de la unidad
+  */
+	prendeDigito(APAGADOS);	 //1
+  	mostrarNumero(count/10); //2
+  	prendeDigito(DECENA);    //3
+  	prendeDigito(APAGADOS);  //4
+  	mostrarNumero(count - 10*((int)count/10)); //5
+  	prendeDigito(UNIDAD);    //6
+
+}
+~~~
+## Link al proyecto
+- [SPD - PARTE 4 - SPD - FACUNDO FIESTAS ](https://www.tinkercad.com/things/gplwVA0JEcV-copy-of-1er-parcial-domiciliario-spd-parte-individual-facundo/editel?sharecode=iRKglXaG1daoEWFyKUSpcYQvuFccx7b-ak7BmRnYcjg)
+
+
+  
