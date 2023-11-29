@@ -171,5 +171,25 @@ void printCount(int count)
 ## Link al proyecto
 - [SPD - PARTE 4 - SPD - FACUNDO FIESTAS ](https://www.tinkercad.com/things/gplwVA0JEcV-copy-of-1er-parcial-domiciliario-spd-parte-individual-facundo/editel?sharecode=iRKglXaG1daoEWFyKUSpcYQvuFccx7b-ak7BmRnYcjg)
 
+-PARTE 5 - Facundo Fiestas
+## Descripcion
+Se agrega un led RGB, el cual enciende una luz verde cuando un numero es par, y una luz roja cuando es impar. (Solo para numeros naturales.)
 
-  
+##Funcion Principal
+La funcion principal se encarga de detectar si un numero es par o no.
+~~~ C++ (lenguaje en el que esta escrito)
+void controlarColorRGB(int numero) {
+  if (numero % 2 == 0) {
+    // Número par, establece un color (por ejemplo, verde)
+    digitalWrite(LED_ROJO, LOW);
+    digitalWrite(LED_VERDE, HIGH);
+  } else {
+    // Número impar, establece otro color (por ejemplo, rojo)
+    digitalWrite(LED_ROJO, HIGH);
+    digitalWrite(LED_VERDE, LOW);
+  }
+}
+~~~
+## Link al proyecto
+- [SPD - PARTE 5 - SPD - FACUNDO FIESTAS ](https://www.tinkercad.com/things/cHbJvkrLO8V-copy-of-parte-4-facundo-fiestas/editel?sharecode=8oJiMf4ufPyVfdx1WPTMcku7pyGKrK2yhti3IxCef7A)
+
